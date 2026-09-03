@@ -40,7 +40,7 @@ list_models <- list()
 list_desc <- list()
 vectors <- list()
 # The default model is either the first public model in the catalog, or 
-# "WWO Full Corpus".
+# "Sepoy Rebellion".
 selected_default <- 1
 selected_compare_1 <- 1
 selected_compare_2 <- 1
@@ -69,13 +69,13 @@ for (i in 1:total_models) {
   print(model$shortName)
   print(model$location)
   name <- model$shortName
-  # The WWO full corpus and WWO body content models are set as defaults if 
+  # The Sepoy Rebellion and Rushdie Affair models are set as defaults if 
   # they appear.
-  if (name == "WWO Full Corpus") {
+  if (name == "Sepoy Rebellion") {
     selected_default <- name
     # TODO: consider removing selected_compare_1 in favor of selected_default
     selected_compare_1 <- name
-  } else if (name == "WWO Body Content") {
+  } else if (name == "Rushdie Affair") {
     selected_compare_2 <- name
   }
   # TODO: augment the catalog object instead of splitting everything into lists?
@@ -367,7 +367,7 @@ viz_content <- tabPanel("Visualization", value=5,
 
 # Put together all the pieces of the user interface.
 app_ui = dashboardPage(
-  title = "Word Vector Interface | Women Writers Vector Toolkit",
+  title = "Colleen Nugent McLean | Computational Analysis of Anti-Muslim Racism in The Times of London",
   header = tags$header(
     class = "main-header",
     tags$link(rel="stylesheet", type="text/css", 
