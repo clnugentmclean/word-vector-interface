@@ -1,0 +1,61 @@
+<div>
+  <!-- Contents of the "Home" tab in the Word Vector Interface -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="box box-solid">
+        <div class="box-body">
+          <p class="home_desc welcome_desc">Welcome to the discovery interface for Colleen Nugent McLean's
+            <i>"Mussulman Fanatics": A Computational Analysis of Anti-Muslim Racism in The Times from the 1857
+            Sepoy Rebellion to the Rushdie Affair</i>! This interface will allow you to 
+            query terms in word2vec models that were trained on texts from <i>The Times</i> of London 
+            around four different case studies from British history. The case studies are the Sepoy
+            Rebellion (1856–1859), the Battle of Omdurman and the Candia Massacre (1897–1899),
+            the German-Ottoman Jihad in the First World War (1913–1915), and the Rushdie Affair (1989).</p>
+          <h1>
+            {{ model_name }}
+          </h1>
+          <div class="model_desc">
+            {{ model_desc }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="box">
+        <div class="box-body">
+          <div class="col-sm-12">
+            <div class="box box-solid">
+              <div class="box-body">
+                {{ controls }}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box">
+              <div class="box-body" id="table-main-1">
+                {{ results }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="box">
+        <div class="box-body">
+          <p>To get started, type a word in the “Query term” box. The results that 
+            appear are the words that are closest to the term that you queried in 
+            vector space—that is, words that appear in similar contexts in the 
+            corpus used to train your model.</p>
+          <p>On the left-hand sidebar, you can select different models to query; you 
+            can also increase the number of words in your results set. More ways to 
+            explore these models can be accessed under the “Compare,” “Clusters,” 
+            “Operations,” and “Visualization” tabs above.</p>
+          <p>If the query term that you select is not in the vocabulary of your chosen model, the word list generated will be a list of stop and filler words.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
