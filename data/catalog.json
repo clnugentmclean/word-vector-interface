@@ -7,7 +7,7 @@
 	"public" : "true",
 	"date":"November 2023",
 	"modelUrl": "https://github.com/clnugentmclean/word-vector-interface/blob/main/data/sepoy-rebellion.bin",
-    "description": "Currently displayed: the entirety of text from The Times of London from 1856-01-01 to 1859-12-31. The text has been regularized. This corpus contains 80,062,149 words in 1,245 issues. This model was trained in November 2023."
+    "description": "Currently displayed: the entirety of text from The Times of London from 1856-01-01 to 1859-12-31. This corpus contains 80,062,149 words in 1,245 issues. This model was trained in November 2023."
   },
   
     "Omdurman and Candia": {
@@ -17,7 +17,7 @@
 	"public" : "true",
 	"date":"February 2025",
 	"modelUrl":"https://github.com/clnugentmclean/word-vector-interface/blob/main/data/omdurman-candia.bin",
-    "description": "Currently displayed: the entirety of text from The Times of London from 1897-0101 to 1899-12-31. The text has been regularized. This corpus contains 85,955,610 words in 946 issues. This model was trained in February 2025."
+    "description": "Currently displayed: the entirety of text from The Times of London from 1897-0101 to 1899-12-31. This corpus contains 85,955,610 words in 946 issues. This model was trained in February 2025."
   },
 
   
@@ -28,7 +28,7 @@
 	"public" : "true",
 	"date":"August 2025",
 	"modelUrl": "https://github.com/clnugentmclean/word-vector-interface/blob/main/data/ottoman-jihad.bin",
-    "description": "Currently displayed: the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31. The text has been regularized. This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
+    "description": "Currently displayed: the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31.  This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
   },
   "Rushdie Affair": {
     "shortName": "Rushdie Affair",
@@ -37,7 +37,7 @@
 	"public" : "true",
 	"date":"February 2026",
 	"modelUrl":"https://github.com/clnugentmclean/word-vector-interface/blob/main/data/rushdie.bin",
-    "description": "Currently displayed: the entirety of The Times of London from 1988-12-01 to 1989-03-31. The text has been regularized. This corpus contains 16,619,703 words in 104 issues. This model was trained in February 2026."
+    "description": "Currently displayed: the entirety of The Times of London from 1988-12-01 to 1989-03-31. This corpus contains 16,619,703 words in 104 issues. This model was trained in February 2026."
   },
 
     "Sepoy Rebellion-1856": {
