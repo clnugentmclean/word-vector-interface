@@ -61,13 +61,15 @@ getRandomClusters <- function(subset = 10) {
 # Iterate over models in the catalog, adding them to the lists of models that 
 # can be used for various features.
 total_models <- length(catalog_json)
+
+# Build a registry of ALL public models' metadata (fast -no vector loading yet)
+model_registry <- list()
+
 for (i in 1:total_models) {
   model <- catalog_json[[i]]
   # There should now only be public models, but it doesn't hurt to check.
   if ( model$public != "true" ) { next }
-  print(paste(c("Loading model", i, "of", total_models), collapse = " "))
-  print(model$shortName)
-  print(model$location)
+  
   name <- model$shortName
   # The Sepoy Rebellion and Rushdie Affair models are set as defaults if 
   # they appear.
@@ -78,19 +80,39 @@ for (i in 1:total_models) {
   } else if (name == "Rushdie Affair") {
     selected_compare_2 <- name
   }
-  # TODO: augment the catalog object instead of splitting everything into lists?
+  
   available_models <- append(available_models, name)
-  list_models[[name]] <- read.vectors(model$location)
-  list_desc[[name]] <- model$description
-  # Generate this model's 150 clusters.
-  my_centers <- kmeans(list_models[[name]], centers = num_clusters, iter.max = 40)
-  list_clusters[[name]] <- list(name = name,
-                                centers = my_centers,
-                                clusters = generateClustersData(my_centers))
-  data <- as.matrix(list_models[[name]])
-  vectors[[name]] <- stats::predict(stats::prcomp(data))[,1:2]
+  model_registry[[name]] <- model
 }
-print("Done loading models.")
+
+# Function that loads a model's vectors/clusters/PCA the first time it's needed,
+# then caches the result so later requests (from any user) are instant.
+ensureModelLoaded <- function(name) {
+  if (!is.null(list_models[[name]])) return(invisible(NULL))  # already cached
+  
+  print(paste("Lazy-loading model:", name))
+  model <- model_registry[[name]]
+  
+  vecs <- read.vectors(model$location)
+  list_models[[name]] <<- vecs
+  list_desc[[name]] <<- model$description
+  
+  my_centers <- kmeans(vecs, centers = num_clusters, iter.max = 40)
+  list_clusters[[name]] <<- list(name = name,
+                                 centers = my_centers,
+                                 clusters = generateClustersData(my_centers))
+  
+  data <- as.matrix(vecs)
+  vectors[[name]] <<- stats::predict(stats::prcomp(data))[,1:2]
+  
+  invisible(NULL)
+}
+
+# Eagerly load only a small "core set" at startup — pick your most-used 1-2 models
+core_models <- c("WWO Full Corpus", "WWO Body Content")
+for (name in core_models) {
+  if (!is.null(model_registry[[name]])) ensureModelLoaded(name)
+}
 
 
 ##
@@ -426,6 +448,9 @@ app_server <- function(input, output, session) {
   
   # Keep the model name and description in sync with the user's choice.
   observeEvent(input$modelSelect, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     output$model_name_basic <- renderText(input$modelSelect[[1]])
     output$model_desc_basic <- renderModelDesc(input$modelSelect[[1]])
   })
@@ -442,10 +467,16 @@ app_server <- function(input, output, session) {
   
   # Keep the models' names and descriptions in sync with the user's choices.
   observeEvent(input$modelSelectc1, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     output$model_name_compare_1 <- renderText(input$modelSelectc1[[1]])
     output$model_desc_compare_1 <- renderModelDesc(input$modelSelectc1[[1]])
   })
   observeEvent(input$modelSelectc2, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     output$model_name_compare_2 <- renderText(input$modelSelectc2[[1]])
     output$model_desc_compare_2 <- renderModelDesc(input$modelSelectc2[[1]])
   })
@@ -478,6 +509,9 @@ app_server <- function(input, output, session) {
   # When a new model is chosen from the list, update the model name, model 
   # description, and what clusters are shown.
   observeEvent(input$modelSelect_clusters, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     use_model <- input$modelSelect_clusters[[1]]
     output$model_name_cluster <- renderText(use_model)
     output$model_desc_cluster <- renderModelDesc(use_model)
@@ -527,6 +561,9 @@ app_server <- function(input, output, session) {
   
   # Keep the model name and description in sync with the user's choice.
   observeEvent(input$modelSelect_operations, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     output$model_name_operation <- renderText(input$modelSelect_operations[[1]])
     output$model_desc_operation <- renderModelDesc(input$modelSelect_operations[[1]])
   })
@@ -663,6 +700,9 @@ app_server <- function(input, output, session) {
   
   # Keep the model name and description in sync with the user's choice.
   observeEvent(input$modelSelect_Visualisation_tabs, {
+    withProgress(message = "Loading model, please wait...", {
+      ensureModelLoaded(input$modelSelect[[1]])
+    })
     output$model_name_visualisation <- renderText(input$modelSelect_Visualisation_tabs[[1]])
     output$model_desc_visualisation <- renderModelDesc(input$modelSelect_Visualisation_tabs[[1]])
   })
