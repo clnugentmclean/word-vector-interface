@@ -143,7 +143,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .main-header {
-  background-color: #343a40 !important;
+  background-color: #654321 !important;
   grid-area: header;
   position: unset;
 }
@@ -161,7 +161,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .main-sidebar {
-  background-color: #222d32; /* via shinydashboard */
+  background-color: #654321; /* via shinydashboard */
   grid-area: sidebar;
   margin: 0;
   min-height: unset;
