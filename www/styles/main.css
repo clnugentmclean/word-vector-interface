@@ -21,7 +21,7 @@ body {
 
 .navbar-toggler {
   margin-top: 0.25rem;
-  background-color: #252525;
+  background-color: #654321;
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover {
@@ -242,7 +242,7 @@ strong.allcaps:first-child {
   margin-right: 0.25rem;
 }
 
-a { color:#006ee5; }
+a { color:#9370db; }
 
 .navbar-dark .navbar-nav .nav-link {
 color: #d7d9dc;
@@ -261,7 +261,7 @@ color: #d7d9dc;
 }
 
 footer {
-  color: #e59a17;
+  color: #026c45;
   font-size: 1rem;
 }
 
