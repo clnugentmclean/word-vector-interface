@@ -3,7 +3,7 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-#wwvt-home {
+#diss-home {
   text-align: center;      /* Centers the text horizontally */
   margin: 2rem auto;       /* Centers the element itself and adds space top/bottom */
   color: #fefefe;
@@ -12,7 +12,7 @@ body {
   display: block;          /* Ensures the element takes up full width to allow centering */
 }
 
-#wwvt-home:hover {
+#diss-home:hover {
   color: #ccc;
   text-decoration: none;
 }
