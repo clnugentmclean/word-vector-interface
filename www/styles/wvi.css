@@ -179,7 +179,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .skin-blue .main-sidebar {
-  background-color: #383838 !important;
+  background-color: #654321 !important;
   grid-area: sidebar;
   margin: 0;
   min-height: unset;
