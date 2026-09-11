@@ -60,7 +60,7 @@ html, body, .wrapper {
 }
 
 .irs--shiny .irs-grid-pol {
-  background-color: #c98a3e;
+  background-color: #148F96;
   opacity: 0.875;
 }
 
@@ -68,12 +68,12 @@ html, body, .wrapper {
 .irs--shiny .irs-single,
 .irs--shiny .irs-from,
 .irs--shiny .irs-to {
-  background-color: #c98a3e !important;
-  border-color: #c98a3e !important;
+  background-color: #148F96 !important;
+  border-color: #148F96 !important;
 }
 
 .irs--shiny .irs-handle > i:first-child {
-  border-color: #c98a3e !important;
+  border-color: #148F96 !important;
 }
 
 .irs--shiny .irs-grid-text {
@@ -138,10 +138,10 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .nav-tabs-custom > .nav-tabs > li.active > a {
-  border-left-color: #c98a3e;
-  border-right-color: #c98a3e;
-  border-top: 3px solid #c98a3e;
-  border-top-color: #c98a3e !important;
+  border-left-color: #148F96;
+  border-right-color: #148F96;
+  border-top: 3px solid #148F96;
+  border-top-color: #148F96 !important;
 }
 .nav-tabs-custom > .nav-tabs > li > a:hover {
   background-color: rgba(220, 220, 220, 0.6);
@@ -157,13 +157,13 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .main-header {
-  background-color: #4e342e !important;
+  background-color: #4F2F39 !important;
   grid-area: header;
   position: unset;
 }
 
 .main-header .navbar.bg-dark {
-  background-color: #4e342e !important;
+  background-color: #4F2F39 !important;
 }
 
 .main-header .navbar {
