@@ -179,7 +179,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 .skin-blue .main-sidebar {
-  background-color: #a1795a !important;
+  background-color: #6d4c34 !important;
   grid-area: sidebar;
   margin: 0;
   min-height: unset;
@@ -189,7 +189,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 }
 
 #navbarResponsive {
-  background-color: #6d4c34;
+  background-color: #39281b;
   display: none;
   padding: 0.25em 0.5em 0.5em;
 }
