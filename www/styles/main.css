@@ -7,7 +7,7 @@ body {
   text-align: center;      /* Centers the text horizontally */
   margin: 2rem auto;       /* Centers the element itself and adds space top/bottom */
   color: #fefefe;
-  font-size: 2rem;         /* Increased from 4rem to make it much larger */
+  font-size: 1.35rem;         /* Increased from 4rem to make it much larger */
   letter-spacing: 0.5px;
   display: block;          /* Ensures the element takes up full width to allow centering */
 }
