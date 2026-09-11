@@ -5,9 +5,10 @@ body {
 
 #wwvt-home {
   margin-left: 1rem;
-  align-self: left;
+  align-self: center;
   color: #fefefe;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  letter-spacing: 0.5px;
 }
 
 #wwvt-home:hover {
