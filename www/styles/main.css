@@ -4,12 +4,12 @@ body {
 }
 
 #diss-home {
-  text-align: center;      /* Centers the text horizontally */
-  margin: 2rem auto;       /* Centers the element itself and adds space top/bottom */
+  text-align: center;      
+  margin: 0.5rem auto;       
   color: #fefefe;
-  font-size: 1.35rem;         /* Increased from 4rem to make it much larger */
+  font-size: 1rem;         
   letter-spacing: 0.5px;
-  display: block;          /* Ensures the element takes up full width to allow centering */
+  display: block;          
 }
 
 #diss-home:hover {
