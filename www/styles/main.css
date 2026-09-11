@@ -4,11 +4,12 @@ body {
 }
 
 #wwvt-home {
-  margin-left: 1rem;
-  align-self: center;
+  text-align: center;      /* Centers the text horizontally */
+  margin: 2rem auto;       /* Centers the element itself and adds space top/bottom */
   color: #fefefe;
-  font-size: 4rem;
+  font-size: 6rem;         /* Increased from 4rem to make it much larger */
   letter-spacing: 0.5px;
+  display: block;          /* Ensures the element takes up full width to allow centering */
 }
 
 #wwvt-home:hover {
