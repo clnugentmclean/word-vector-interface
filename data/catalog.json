@@ -1,47 +1,47 @@
 {
 
   "Sepoy Rebellion": {
-    "shortName": "Sepoy Rebellion",
+    "shortName": "1856—1859, The Times",
     "location": "data/sepoy-rebellion.bin",
 	"shortDescription" : "All text from The Times from 1856-01-01 to 1859-12-31",
 	"public" : "true",
 	"date":"November 2023",
 	"modelUrl": "https://github.com/clnugentmclean/word-vector-interface/blob/main/data/sepoy-rebellion.bin",
-    "description": "Currently displayed: the entirety of text from The Times of London from 1856-01-01 to 1859-12-31. This corpus contains 80,062,149 words in 1,245 issues. This model was trained in November 2023."
+    "description": "Currently displayed: this corpus was built to analyze the Sepoy Rebellion in India in 1857 and 1858. the entirety of text from The Times of London from 1856-01-01 to 1859-12-31. This corpus contains 80,062,149 words in 1,245 issues. This model was trained in November 2023."
   },
   
     "Omdurman and Candia": {
-    "shortName": "Omdurman and Candia",
+    "shortName": "1897—1899, The Times",
     "location": "data/omdurman-candia.bin",
 	"shortDescription" : "All texts from The Times from 1897-01-01 to 1899-12-31",
 	"public" : "true",
 	"date":"February 2025",
 	"modelUrl":"https://github.com/clnugentmclean/word-vector-interface/blob/main/data/omdurman-candia.bin",
-    "description": "Currently displayed: the entirety of text from The Times of London from 1897-0101 to 1899-12-31. This corpus contains 85,955,610 words in 946 issues. This model was trained in February 2025."
+    "description": "Currently displayed: this corpus was built to analyze the Battle of Omdurman in the Sudan in 1898. the entirety of text from The Times of London from 1897-0101 to 1899-12-31. This corpus contains 85,955,610 words in 946 issues. This model was trained in February 2025."
   },
 
   
   "Ottoman Jihad": {
-    "shortName": "Ottoman Jihad",
+    "shortName": "1913—1915, The Times",
     "location": "data/ottoman-jihad.bin",
 	"shortDescription" : "All texts from The Times from 1913-01-01 to 1915-12-31",
 	"public" : "true",
 	"date":"August 2025",
 	"modelUrl": "https://github.com/clnugentmclean/word-vector-interface/blob/main/data/ottoman-jihad.bin",
-    "description": "Currently displayed: the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31.  This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
+    "description": "Currently displayed: this corpus was built to analyze the German-Ottoman declaration of jihad during the First World War. the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31.  This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
   },
   "Rushdie Affair": {
-    "shortName": "Rushdie Affair",
+    "shortName": "1989, The Times",
     "location": "data/rushdie.bin",
 	"shortDescription" : "All texts from The Times from 1988-12-01 to 1989-03-31",
 	"public" : "true",
 	"date":"February 2026",
 	"modelUrl":"https://github.com/clnugentmclean/word-vector-interface/blob/main/data/rushdie.bin",
-    "description": "Currently displayed: the entirety of The Times of London from 1988-12-01 to 1989-03-31. This corpus contains 16,619,703 words in 104 issues. This model was trained in February 2026."
+    "description": "Currently displayed: this corpus was built to analyze the Rushdie Affair. the entirety of The Times of London from 1988-12-01 to 1989-03-31. This corpus contains 16,619,703 words in 104 issues. This model was trained in February 2026."
   },
 
     "Sepoy Rebellion-1856": {
-    "shortName": "Sepoy Rebellion-1856",
+    "shortName": "The Times-1856",
     "location": "data/1856.bin",
 	"shortDescription" : "All texts from The Times from 1856-01-01 to 1856-12-31",
 	"public" : "true",
@@ -52,7 +52,7 @@
  
 
   "Sepoy Rebellion-1857": {
-    "shortName": "Sepoy Rebellion-1857",
+    "shortName": "The Times-1857",
     "location": "data/1857.bin",
 	"shortDescription" : "All texts from The Times from 1857-01-01 to 1857-12-31",
 	"public" : "true",
@@ -62,7 +62,7 @@
   },
   
     "Sepoy Rebellion-1858": {
-    "shortName": "Sepoy Rebellion-1858",
+    "shortName": "The Times-1858",
     "location": "data/1858.bin",
 	"shortDescription" : "All texts from The Times from 1858-01-01 to 1858-12-31",
 	"public" : "true",
@@ -73,7 +73,7 @@
   
 
   "Sepoy Rebellion-1859": {
-    "shortName": "Sepoy Rebellion-1859",
+    "shortName": "The Times-1859",
     "location": "data/1859.bin",
 	"shortDescription" : "All texts from The Times from 1859-01-01 to 1859-12-31",
 	"public" : "true",
@@ -83,7 +83,7 @@
   },
 
   "Omdurman and Candia-1897": {
-    "shortName": "Omdurman and Candia-1897",
+    "shortName": "The Times-1897",
     "location": "data/1897.bin",
 	"shortDescription" : "All texts from The Times from 1897-01-01 to 1897-12-31",
 	"public" : "true",
@@ -93,7 +93,7 @@
   },
 
   "Omdurman and Candia-1898": {
-    "shortName": "Omdurman and Candia-1898",
+    "shortName": "The Times-1898",
     "location": "data/1898.bin",
 	"shortDescription" : "All texts from The Times from 1898-01-01 to 1898-12-31",
 	"public" : "true",
@@ -104,7 +104,7 @@
 
   
   "Omdurman and Candia-1899": {
-    "shortName": "Omdurman and Candia-1899",
+    "shortName": "The Times-1899",
     "location": "data/1899.bin",
 	"shortDescription" : "All texts from The Times from 1899-01-01 to 1899-12-31",
 	"public" : "true",
@@ -114,7 +114,7 @@
   },
   
   "Ottoman Jihad-1913": {
-    "shortName": "Ottoman Jihad-1913",
+    "shortName": "The Times-1913",
     "location": "data/1913.bin",
 	"shortDescription" : "All texts from The Times from 1913-01-01 to 1913-12-31",
 	"public" : "true",
@@ -124,7 +124,7 @@
   },
 
   "Ottoman Jihad-1914": {
-    "shortName": "Ottoman Jihad-1914",
+    "shortName": "The Times-1914",
     "location": "data/1914.bin",
 	"shortDescription" : "All texts from The Times from 1914-01-01 to 1914-12-31",
 	"public" : "true",
@@ -134,7 +134,7 @@
   },
 
   "Ottoman Jihad-1915": {
-    "shortName": "Ottoman Jihad-1915",
+    "shortName": "The Times-1915",
     "location": "data/1915.bin",
 	"shortDescription" : "All texts from The Times from 1915-01-01 to 1915-12-31",
 	"public" : "true",
