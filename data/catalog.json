@@ -1,7 +1,7 @@
 {
 
   "Sepoy Rebellion": {
-    "shortName": "1856—1859, The Times",
+    "shortName": "The Times, 1857-1859",
     "location": "data/sepoy-rebellion.bin",
 	"shortDescription" : "All text from The Times from 1856-01-01 to 1859-12-31",
 	"public" : "true",
