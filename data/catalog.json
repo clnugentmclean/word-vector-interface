@@ -1,7 +1,7 @@
 {
 
   "Sepoy Rebellion": {
-    "shortName": "The Times, 1857-1859",
+    "shortName": "The Times 1857-1859",
     "location": "data/sepoy-rebellion.bin",
 	"shortDescription" : "All text from The Times from 1856-01-01 to 1859-12-31",
 	"public" : "true",
@@ -11,7 +11,7 @@
   },
   
     "Omdurman and Candia": {
-    "shortName": "The Times, 1897-1899",
+    "shortName": "The Times 1897-1899",
     "location": "data/omdurman-candia.bin",
 	"shortDescription" : "All texts from The Times from 1897-01-01 to 1899-12-31",
 	"public" : "true",
@@ -22,7 +22,7 @@
 
   
   "Ottoman Jihad": {
-    "shortName": "The Times, 1913-1915",
+    "shortName": "The Times 1913-1915",
     "location": "data/ottoman-jihad.bin",
 	"shortDescription" : "All texts from The Times from 1913-01-01 to 1915-12-31",
 	"public" : "true",
@@ -31,7 +31,7 @@
     "description": "Currently displayed: this corpus was built to analyze the German-Ottoman declaration of jihad during the First World War. the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31.  This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
   },
   "Rushdie Affair": {
-    "shortName": "The Times, 1989",
+    "shortName": "The Times-1989",
     "location": "data/rushdie.bin",
 	"shortDescription" : "All texts from The Times from 1988-12-01 to 1989-03-31",
 	"public" : "true",
