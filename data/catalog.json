@@ -1,7 +1,7 @@
 {
 
-  "Sepoy Rebellion": {
-    "shortName": "The Times 1857-1859",
+  "The Times 1856-1859": {
+    "shortName": "The Times 1856-1859",
     "location": "data/sepoy-rebellion.bin",
 	"shortDescription" : "All text from The Times from 1856-01-01 to 1859-12-31",
 	"public" : "true",
@@ -10,7 +10,7 @@
     "description": "Currently displayed: this corpus was built to analyze the Sepoy Rebellion in India in 1857 and 1858. the entirety of text from The Times of London from 1856-01-01 to 1859-12-31. This corpus contains 80,062,149 words in 1,245 issues. This model was trained in November 2023."
   },
   
-    "Omdurman and Candia": {
+    "The Times 1897-1899": {
     "shortName": "The Times 1897-1899",
     "location": "data/omdurman-candia.bin",
 	"shortDescription" : "All texts from The Times from 1897-01-01 to 1899-12-31",
@@ -21,7 +21,7 @@
   },
 
   
-  "Ottoman Jihad": {
+  "The Times 1913-1915": {
     "shortName": "The Times 1913-1915",
     "location": "data/ottoman-jihad.bin",
 	"shortDescription" : "All texts from The Times from 1913-01-01 to 1915-12-31",
@@ -30,7 +30,7 @@
 	"modelUrl": "https://github.com/clnugentmclean/word-vector-interface/blob/main/data/ottoman-jihad.bin",
     "description": "Currently displayed: this corpus was built to analyze the German-Ottoman declaration of jihad during the First World War. the entirety of the text from The Times of London from 1913-01-01 to 1915-12-31.  This corpus contains 136,705,720 words in 947 issues. This model was trained in August 2025."
   },
-  "Rushdie Affair": {
+  "The Times-1989": {
     "shortName": "The Times-1989",
     "location": "data/rushdie.bin",
 	"shortDescription" : "All texts from The Times from 1988-12-01 to 1989-03-31",
@@ -40,7 +40,7 @@
     "description": "Currently displayed: this corpus was built to analyze the Rushdie Affair. the entirety of The Times of London from 1988-12-01 to 1989-03-31. This corpus contains 16,619,703 words in 104 issues. This model was trained in February 2026."
   },
 
-    "Sepoy Rebellion-1856": {
+    "The Times-1856": {
     "shortName": "The Times-1856",
     "location": "data/1856.bin",
 	"shortDescription" : "All texts from The Times from 1856-01-01 to 1856-12-31",
@@ -51,7 +51,7 @@
   },
  
 
-  "Sepoy Rebellion-1857": {
+  "The Times-1857": {
     "shortName": "The Times-1857",
     "location": "data/1857.bin",
 	"shortDescription" : "All texts from The Times from 1857-01-01 to 1857-12-31",
@@ -61,7 +61,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1857-01-01 to 1857-12-31. This corpus contains 35,287,194 words in 311 texts. This model was trained in December 2023."
   },
   
-    "Sepoy Rebellion-1858": {
+    "The Times-1858": {
     "shortName": "The Times-1858",
     "location": "data/1858.bin",
 	"shortDescription" : "All texts from The Times from 1858-01-01 to 1858-12-31",
@@ -72,7 +72,7 @@
   },
   
 
-  "Sepoy Rebellion-1859": {
+  "The Times-1859": {
     "shortName": "The Times-1859",
     "location": "data/1859.bin",
 	"shortDescription" : "All texts from The Times from 1859-01-01 to 1859-12-31",
@@ -82,7 +82,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1859-01-01 to 1859-12-31. This corpus contains 17,720,162 words in 311 texts. This model was trained in December 2023."
   },
 
-  "Omdurman and Candia-1897": {
+  "The Times-1897": {
     "shortName": "The Times-1897",
     "location": "data/1897.bin",
 	"shortDescription" : "All texts from The Times from 1897-01-01 to 1897-12-31",
@@ -92,7 +92,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1897-01-01 to 1897-12-31. This corpus contains 22,811,322 words in 315 texts. This model was trained in March 2025."
   },
 
-  "Omdurman and Candia-1898": {
+  "The Times-1898": {
     "shortName": "The Times-1898",
     "location": "data/1898.bin",
 	"shortDescription" : "All texts from The Times from 1898-01-01 to 1898-12-31",
@@ -103,7 +103,7 @@
   },
 
   
-  "Omdurman and Candia-1899": {
+  "The Times-1899": {
     "shortName": "The Times-1899",
     "location": "data/1899.bin",
 	"shortDescription" : "All texts from The Times from 1899-01-01 to 1899-12-31",
@@ -113,7 +113,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1899-01-01 to 1899-12-31. This corpus contains 32,039,661 in 315 texts. This model was trained in March 2025."
   },
   
-  "Ottoman Jihad-1913": {
+  "The Times-1913": {
     "shortName": "The Times-1913",
     "location": "data/1913.bin",
 	"shortDescription" : "All texts from The Times from 1913-01-01 to 1913-12-31",
@@ -123,7 +123,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1913-01-01 to 1913-12-31. This corpus contains 50,149,125 words in 315 issues. The text has been regularized. This model was trained in October 2025."
   },
 
-  "Ottoman Jihad-1914": {
+  "The Times-1914": {
     "shortName": "The Times-1914",
     "location": "data/1914.bin",
 	"shortDescription" : "All texts from The Times from 1914-01-01 to 1914-12-31",
@@ -133,7 +133,7 @@
     "description": "Currently displayed: the entirety of the text of The Times of London from 1914-01-01 to 1914-12-31. This corpus contains 47,986,178 words in 315 issues. The text has been regularized. This model was trained in October 2025."
   },
 
-  "Ottoman Jihad-1915": {
+  "The Times-1915": {
     "shortName": "The Times-1915",
     "location": "data/1915.bin",
 	"shortDescription" : "All texts from The Times from 1915-01-01 to 1915-12-31",
