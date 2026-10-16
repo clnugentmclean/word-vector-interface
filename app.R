@@ -73,11 +73,11 @@ for (i in 1:total_models) {
   name <- model$shortName
   # The Sepoy Rebellion and Rushdie Affair models are set as defaults if 
   # they appear.
-  if (name == "Sepoy Rebellion") {
+  if (name == "The Times 1856-1859") {
     selected_default <- name
     # TODO: consider removing selected_compare_1 in favor of selected_default
     selected_compare_1 <- name
-  } else if (name == "Rushdie Affair") {
+  } else if (name == "The Times-1989") {
     selected_compare_2 <- name
   }
   
@@ -109,7 +109,7 @@ ensureModelLoaded <- function(name) {
 }
 
 # Eagerly load only a small "core set" at startup — pick your most-used 1-2 models
-core_models <- c("WWO Full Corpus", "WWO Body Content")
+core_models <- c("The Times 1856-1859", "The Times-1989")
 for (name in core_models) {
   if (!is.null(model_registry[[name]])) ensureModelLoaded(name)
 }
