@@ -109,7 +109,7 @@ ensureModelLoaded <- function(name) {
 }
 
 # Eagerly load only a small "core set" at startup — pick your most-used 1-2 models
-core_models <- c("The Times 1856-1859", "The Times-1989")
+core_models <- c("WWO Full Corpus", "WWO")
 for (name in core_models) {
   if (!is.null(model_registry[[name]])) ensureModelLoaded(name)
 }
